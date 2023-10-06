@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: left;
+    padding: 10px;
+    height: 4rem;
+}
+
+#logo {
+    font-size: 30px;
+    margin-left: 150px;
+    display: inline-block; 
+}
+
+main {
+    padding: 20px;
+}
+
+.sort{
+    display:flex;
+    margin-left:160px;
+}
+
+.post-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.post-card {
+    width: calc(15%); 
+    height: 300px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-betweeb;
+    padding: 10px;
+}
+
+.post-card img {
+    max-width: stretch;
+    height: 200px;
+}
+
+.post-info {
+    font-size: 12px;
+}
+
+.post-intro {
+    font-size: 14px;
+}
