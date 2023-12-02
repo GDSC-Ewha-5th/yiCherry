@@ -7,6 +7,8 @@ const ResultCard = ({ data, repoData }) => {
   const { avatar_url, name, login, followers, following, bio } = data;
   const { name:repoName } = repoData;
 
+  console.log(repoData);
+
   return (
     <>
       <StDiv>

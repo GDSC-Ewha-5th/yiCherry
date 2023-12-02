@@ -24,20 +24,23 @@ function App() {
             status:"pending" 
         });
 
+
         try {
 
             // userData 
             const data = await getUserData(name);
             if(data === null) throw Error;
-
+            
             // userRepoData 
             const repoData = await getUserRepo(name);
 
             // * success 
+            const MAX_REPOSITORY = 10;
             setUserState({ 
-                status: "resolved", 
-                data: data , 
-                repoData: repoData 
+                status: "resolved",
+                data: data,
+                repoData: (repoData.length) > MAX_REPOSITORY ? 
+                    repoData.slice(-MAX_REPOSITORY): repoData,
             });
         }
         catch (e) {

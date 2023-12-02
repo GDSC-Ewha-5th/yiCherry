@@ -22,7 +22,7 @@ export const getUserData = async (name) => { // name == githubID
 export const getUserRepo = async (name) => { 
   try {
     const { data } = await client.get(`${name}/repos`);
-    console.log("[SUCCESS] GET user repositories", data?.slice(0,10));
+    console.log("[SUCCESS] GET user repositories", data);
     return data
   } 
   catch (e) {
